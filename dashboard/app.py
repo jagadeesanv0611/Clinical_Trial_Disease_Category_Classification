@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import re
 import nltk
-from nltk.tokenize import word_tokenize
+# from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk import pos_tag
 from nltk.corpus import wordnet
@@ -10,20 +10,12 @@ from nltk.stem import WordNetLemmatizer
 import string
 from pathlib import Path
 
+@st.cache_resource
 def download_nltk():
-    resources = [
-        ("corpora/stopwords", "stopwords"),
-        ("corpora/wordnet", "wordnet"),
-        ("tokenizers/punkt", "punkt"),
-        ("taggers/averaged_perceptron_tagger", "averaged_perceptron_tagger"),
-        ("taggers/averaged_perceptron_tagger_eng", "averaged_perceptron_tagger_eng")
-    ]
-
-    for path, name in resources:
-        try:
-            nltk.data.find(path)
-        except LookupError:
-            nltk.download(name)
+    nltk.download("punkt", quiet=True)
+    nltk.download("stopwords", quiet=True)
+    nltk.download("wordnet", quiet=True)
+    nltk.download("averaged_perceptron_tagger", quiet=True)
 
 download_nltk()
 
@@ -83,11 +75,20 @@ def cleaned_text(text):
 
     text = re.sub(r'\.(?=[A-Z])', '. ', text)                        
     text = re.sub(r'-\s', ' ', text)                                 
-    text = text.lower()                                                                 
-    tokens = word_tokenize(text)                                                        
-    tokens = [w for w in tokens if w not in punctuations and w not in stop_words]       
+    text = text.lower()         
+
+    tokens = re.findall(r"[a-zA-Z]+", text)                                                        
+    tokens = [
+                token for token in tokens
+                if token not in punctuations and token not in stop_words
+    ]   
+
     tagged = pos_tag(tokens)
-    tokens = [lemmatizer.lemmatize(w, get_wordnet_pos(t)) for w, t in tagged]           
+    tokens = [
+                    lemmatizer.lemmatize(word, get_wordnet_pos(tag))
+                    for word, tag in tagged
+    ]   
+           
     return ' '.join(tokens)  
 
 
