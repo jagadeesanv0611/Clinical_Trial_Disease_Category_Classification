@@ -2,7 +2,7 @@ streamlit
 pandas
 numpy
 scikit-learn
-joblib==1.5.1
+joblib
 nltk
 plotly
 os
