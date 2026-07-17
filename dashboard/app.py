@@ -10,7 +10,7 @@ from nltk.stem import WordNetLemmatizer
 import string
 from pathlib import Path
 
-@st.cache_resource
+# @st.cache_resource
 def download_nltk():
     nltk.download("punkt", quiet=True)
     nltk.download("stopwords", quiet=True)
@@ -40,7 +40,7 @@ MODEL_DIR = BASE_DIR.parent / "models"
 # -------------------------------
 
 
-@st.cache_resource
+# @st.cache_resource
 def load_prediction_models():
     model = joblib.load(MODEL_DIR / "svm_model.pkl")
     vectorizer = joblib.load(MODEL_DIR / "tfidf_vectorizer.pkl")
@@ -51,7 +51,7 @@ def load_prediction_models():
 model, vectorizer, label_encoder = load_prediction_models()
 
 
-@st.cache_resource
+# @st.cache_resource
 def load_model(file_name):
     return joblib.load(MODEL_DIR / file_name)
 
