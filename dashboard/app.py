@@ -16,6 +16,7 @@ def download_nltk():
         ("corpora/wordnet", "wordnet"),
         ("tokenizers/punkt", "punkt"),
         ("taggers/averaged_perceptron_tagger", "averaged_perceptron_tagger")
+        ("taggers/averaged_perceptron_tagger_eng", "averaged_perceptron_tagger_eng")
     ]
 
     for path, name in resources:
