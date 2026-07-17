@@ -143,8 +143,8 @@ elif page == "Disease Prediction":
 
                 vector = vectorizer.transform([clean_input])
 
-                prediction = model.predict(vector)
+                prediction = model.predict(vector)[0]
 
-                disease = label_encoder.inverse_transform(prediction)
+                disease = label_encoder.inverse_transform([prediction])[0]
 
-                st.success(f"Predicted Disease: {disease[0]}")
+                st.success(f"Predicted Disease: {disease}")
