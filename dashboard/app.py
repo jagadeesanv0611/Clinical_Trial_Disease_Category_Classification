@@ -15,7 +15,7 @@ def download_nltk():
         ("corpora/stopwords", "stopwords"),
         ("corpora/wordnet", "wordnet"),
         ("tokenizers/punkt", "punkt"),
-        ("taggers/averaged_perceptron_tagger", "averaged_perceptron_tagger")
+        ("taggers/averaged_perceptron_tagger", "averaged_perceptron_tagger"),
         ("taggers/averaged_perceptron_tagger_eng", "averaged_perceptron_tagger_eng")
     ]
 
