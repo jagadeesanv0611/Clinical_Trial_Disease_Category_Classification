@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import re
 import nltk
-# from nltk.tokenize import word_tokenize
+from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk import pos_tag
 from nltk.corpus import wordnet
@@ -10,13 +10,13 @@ from nltk.stem import WordNetLemmatizer
 import string
 from pathlib import Path
 
-# @st.cache_resource
 def download_nltk():
     nltk.download("punkt", quiet=True)
+    nltk.download("punkt_tab", quiet=True)
     nltk.download("stopwords", quiet=True)
     nltk.download("wordnet", quiet=True)
     nltk.download("averaged_perceptron_tagger", quiet=True)
-
+    nltk.download("averaged_perceptron_tagger_eng", quiet=True)
 download_nltk()
 
 
@@ -27,10 +27,10 @@ st.set_page_config(
                     initial_sidebar_state="expanded"
 )
 
+
 # -------------------------------
 # Model Folder Path
 # -------------------------------
-
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_DIR = BASE_DIR.parent / "models"
 
@@ -38,9 +38,6 @@ MODEL_DIR = BASE_DIR.parent / "models"
 # -------------------------------
 # Load Saved Files
 # -------------------------------
-
-
-# @st.cache_resource
 def load_prediction_models():
     model = joblib.load(MODEL_DIR / "svm_model.pkl")
     vectorizer = joblib.load(MODEL_DIR / "tfidf_vectorizer.pkl")
@@ -50,8 +47,6 @@ def load_prediction_models():
 
 model, vectorizer, label_encoder = load_prediction_models()
 
-
-# @st.cache_resource
 def load_model(file_name):
     return joblib.load(MODEL_DIR / file_name)
 
@@ -77,26 +72,24 @@ def cleaned_text(text):
     text = re.sub(r'-\s', ' ', text)                                 
     text = text.lower()         
 
-    tokens = re.findall(r"[a-zA-Z]+", text)                                                        
+    # tokens = re.findall(r"[a-zA-Z]+", text)          
+    tokens = word_tokenize(text)                                              
     tokens = [
                 token for token in tokens
                 if token not in punctuations and token not in stop_words
-    ]   
+            ]   
 
     tagged = pos_tag(tokens)
     tokens = [
                     lemmatizer.lemmatize(word, get_wordnet_pos(tag))
                     for word, tag in tagged
-    ]   
-           
+            ]   
+
     return ' '.join(tokens)  
-
-
 
 
 st.sidebar.title("Disease Prediction using NLP")
 page = st.sidebar.radio( "Content", ["Home","EDA","Disease Prediction"] )
-
 
 # Home Page:
 if page == "Home":
