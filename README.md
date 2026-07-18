@@ -34,7 +34,7 @@
 | 8 | Sickle Cell Anemia | 1,136 |
 
 # Data Cleaning
-- Data preprocessing is the process of cleaning and preparing raw data so that it can be effectively used for analysis and machine learning.
+- The process of cleaning and preparing raw data so that it can be effectively used for analysis and machine learning.
 - Handle missing values (null data) to ensures the dataset is complete and prevents errors during analysis and model training.
 
 | S.No | Feature | Missing Values Count |
@@ -52,7 +52,14 @@
 - Null value for 'Official title' can be cleared by using 'title' feature like moreover same data is present in both feature so, just copy the details from 'title' feature and fill it in missing records.
 - For 'conditions' fill 'Unknown' for missing value.
 - For 'interventions' fill 'No_Interventions_Mentioned' as null value.
-- 
+- For 'phase' fill 'Unknown_Phase' as null value.
+- For 'sex', null value can be filled by using mode function between All, Female & Male.
+- For 'minimum_age' fill '0' as null value and 'maximum_age' fill '120' as null value.
+- For 'healthy_volunteers' null value can be filled by grouping 'study_type' and 'phase' then use mode function to fill the value.
+- For 'eligibility_criteria' fill 'No_Criteria_Mentioned' as null value.
+
+# Data Preprocessing:
+
 
 ## Model Deployment:
 https://clinicaltrialdiseasecategoryclassification-cclawzbathmejrp8sxe.streamlit.app/
