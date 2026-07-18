@@ -80,7 +80,7 @@
 - Exploratory Data Analysis (EDA) is used to summarize, visualize, and understand the dataset.
 ### No of Trial per Disease Category:
 <img width="1000" height="500" alt="no_of_trial_per_disease_category" src="https://github.com/user-attachments/assets/ae6b1cf5-f8a6-4ec1-8632-e8d74aa7ffff" />
-
+- This chart shows about no of trials of each disease category and from this we can understand first three disease breast cancer, type 2 diabetes, covid-19 are above 10k count. Where as anxiety has around 9260 count. other four disease chronic obstructive pulmonary disease, rheumatoid arthritis, glaucoma, sickle cell anemia are below 7000 counts only.
 
 
 
