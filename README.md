@@ -21,17 +21,18 @@
 - The raw dataset (clinical_trials_raw_patient2trial_conditions.csv) contains 60,337 records and 16 columns, sourced from clinical trial registrations. The two columns central to this project are:
 - brief_summary — free-text description of each trial (model input, X)
 - source_condition_query — the disease category label (target, y), with 8 unique values
-- Disease category and its Trial count:
-1. Breast Cancer -  16,265
-2. Type 2 Diabetes - 11,398
-3. COVID-19 - 10,103
-4. Anxiety - 9,260
-5. Chronic Obstructive Pulmonary Disease - 6,142
-6. Rheumatoid Arthritis - 3,618
-7. Glaucoma - 2,150
-8. Sickle Cell Anemia - 1,136
+| S.No | Disease Category | Trial Count |
+|---|---|---|
+| 1 | Breast Cancer | 16,265 |
+| 2 | Type 2 Diabetes | 11,398 |
+| 3 | COVID-19 | 10,103 |
+| 4 | Anxiety | 9,260 |
+| 5 | Chronic Obstructive Pulmonary Disease | 6,142 |
+| 6 | Rheumatoid Arthritis | 3,618 |
+| 7 | Glaucoma | 2,150 |
+| 8 | Sickle Cell Anemia | 1,136 |
 
-
+# Data Cleaning
 
 
 
