@@ -14,13 +14,40 @@
 
 # Data Collection:
 - Data collection is to gather and organize the raw data in a structured format, making it ready for preprocessing, analysis, feature engineering, and machine learning model development.
-### Dataset
+### Dataset:
+- The dataset size is large. So, downloadable link is given.
 [Download the dataset from Kaggle](https://www.kaggle.com/datasets/yourusername/clinical-trial-disease-category-classification)
+
+The raw dataset (clinical_trials_raw_patient2trial_conditions.csv) contains 60,337 records and 16 columns, sourced from clinical trial registrations. The two columns central to this project are:
+●	brief_summary — free-text description of each trial (model input, X)
+●	source_condition_query — the disease category label (target, y), with 8 unique values
+
+**Disease Category	**                                       **Trial Count**
+Breast Cancer	                                           16,265
+Type 2 Diabetes	                                         11,398
+COVID-19	                                               10,103
+Anxiety              	                                   9,260
+Chronic Obstructive Pulmonary Disease	                   6,142
+Rheumatoid Arthritis	                                   3,618
+Glaucoma	                                               2,150
+Sickle Cell Anemia	                                     1,136
+
+
+
 
 
 ## Model Deployment:
 https://clinicaltrialdiseasecategoryclassification-cclawzbathmejrp8sxe.streamlit.app/
 
 
-## Dataset
-[Download the dataset from Kaggle](https://www.kaggle.com/datasets/yourusername/clinical-trial-disease-category-classification)
+
+
+
+
+
+
+
+
+
+
+
