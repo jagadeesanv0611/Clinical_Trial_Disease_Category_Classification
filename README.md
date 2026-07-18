@@ -21,6 +21,7 @@
 - The raw dataset (clinical_trials_raw_patient2trial_conditions.csv) contains 60,337 records and 16 columns, sourced from clinical trial registrations. The two columns central to this project are:
 - brief_summary — free-text description of each trial (model input, X)
 - source_condition_query — the disease category label (target, y), with 8 unique values
+
 | S.No | Disease Category | Trial Count |
 |---|---|---|
 | 1 | Breast Cancer | 16,265 |
