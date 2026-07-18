@@ -1,7 +1,7 @@
 # Clinical_Trial_Disease_Category_Classification
 
 # Project Overview:
-
+- The project focus is to preprocess and transform the clinical trial text data into a structured format and apply Natural Language Processing (NLP) and Machine Learning techniques to classify clinical trial summaries into appropriate disease categories. 
 
 
 
