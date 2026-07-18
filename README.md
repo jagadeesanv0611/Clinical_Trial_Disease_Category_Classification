@@ -37,17 +37,18 @@
 - Data preprocessing is the process of cleaning and preparing raw data so that it can be effectively used for analysis and machine learning.
 - Handle missing values (null data) to ensures the dataset is complete and prevents errors during analysis and model training.
 - Here the null values for 
-1. official_title       - 786
-2. conditions           - 1
-3. interventions        - 6061
-4. phase                - 37001
-5. sex                  - 33
-6. minimum_age          - 3216
-7. maximum_age          - 31937
-8. healthy_volunteers   - 1480
-9. eligibility_criteria - 11
 
-
+| S.No | Feature | Missing Values |
+|---|---|---|
+| 1 | official_title | 786 |
+| 2 | conditions | 1 |
+| 3 | interventions | 6061 |
+| 4 | phase | 37001 |
+| 5 | sex | 33 |
+| 6 | minimum_age | 3216 |
+| 7 | maximum_age | 31937 |
+| 8 | healthy_volunteers | 1480 |
+| 9 | eligibility_criteria | 11 |
 
 
 ## Model Deployment:
