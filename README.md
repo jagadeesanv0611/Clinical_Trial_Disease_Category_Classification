@@ -36,9 +36,8 @@
 # Data Cleaning
 - Data preprocessing is the process of cleaning and preparing raw data so that it can be effectively used for analysis and machine learning.
 - Handle missing values (null data) to ensures the dataset is complete and prevents errors during analysis and model training.
-- Here the null values for 
 
-| S.No | Feature | Missing Values |
+| S.No | Feature | Missing Values Count |
 |---|---|---|
 | 1 | official_title | 786 |
 | 2 | conditions | 1 |
@@ -50,6 +49,10 @@
 | 8 | healthy_volunteers | 1480 |
 | 9 | eligibility_criteria | 11 |
 
+- Null value for 'Official title' can be cleared by using 'title' feature like moreover same data is present in both feature so, just copy the details from 'title' feature and fill it in missing records.
+- For 'conditions' fill 'Unknown' for missing value.
+- For 'interventions' fill 'No_Interventions_Mentioned' as null value.
+- 
 
 ## Model Deployment:
 https://clinicaltrialdiseasecategoryclassification-cclawzbathmejrp8sxe.streamlit.app/
