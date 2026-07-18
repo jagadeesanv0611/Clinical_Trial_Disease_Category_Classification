@@ -63,12 +63,14 @@
 # NLP Text Preprocessing:
 - NLP Text preprocessing is done for feature 'brief_summary' because it is an input for the model evaluation.
 - The concept used for text preprocessing is Tokenization, POS, Lemmatization.
-    - First step is to Formating correction by inserting missing spaces after immediately followed by a capital letter Eg: 'recovery.This' → 'recovery. This'
-    - Second step is normalises the words by using Lowercasing operation. Eg: 'Breast Cancer Patients Often'  -> 'breast cancer patients often'
+    - First step is to Formating correction by inserting missing spaces after immediately followed by a capital letter
+    - Eg: 'recovery.This' → 'recovery. This'
+    - Second step is normalises the words by using Lowercasing operation.
+    - Eg: 'Breast Cancer Patients Often'  -> 'breast cancer patients often'
     - Third step is Tokenization process where text splitted into individual word tokens using NLTK's word_tokenize.
-          - Eg:  'breast cancer patients often have perioperative'   -->  'breast', 'cancer', 'patients', 'often', 'have', 'perioperative'
+    - Eg:  'breast cancer patients often have perioperative'   -->  'breast', 'cancer', 'patients', 'often', 'have', 'perioperative'
     - Fourth Step is to remove stopword and Punctuation using NLTK's English stopword list and Python's string.punctuation set.
-          - Eg:  'anxiety', 'and', 'depression', ',', 'which', 'can', 'lead', 'to', 'poor'  -->  'anxiety', 'depression', 'lead', 'poor'
+    - Eg:  'anxiety', 'and', 'depression', ',', 'which', 'can', 'lead', 'to', 'poor'  -->  'anxiety', 'depression', 'lead', 'poor'
 
       
 ●	Stopword and punctuation removal — using NLTK's English stopword list and Python's string.punctuation set
