@@ -12,8 +12,10 @@
 - Plotly
 - Streamlit
 
-
-
+# Data Collection:
+- Data collection is to gather and organize the raw data in a structured format, making it ready for preprocessing, analysis, feature engineering, and machine learning model development.
+### Dataset
+[Download the dataset from Kaggle](https://www.kaggle.com/datasets/yourusername/clinical-trial-disease-category-classification)
 
 
 ## Model Deployment:
@@ -21,5 +23,4 @@ https://clinicaltrialdiseasecategoryclassification-cclawzbathmejrp8sxe.streamlit
 
 
 ## Dataset
-
 [Download the dataset from Kaggle](https://www.kaggle.com/datasets/yourusername/clinical-trial-disease-category-classification)
