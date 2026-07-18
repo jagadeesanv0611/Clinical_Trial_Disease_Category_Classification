@@ -71,12 +71,10 @@
     - Eg:  'breast cancer patients often have perioperative'   -->  'breast', 'cancer', 'patients', 'often', 'have', 'perioperative'
     - Fourth Step is to remove stopword and Punctuation using NLTK's English stopword list and Python's string.punctuation set.
     - Eg:  'anxiety', 'and', 'depression', ',', 'which', 'can', 'lead', 'to', 'poor'  -->  'anxiety', 'depression', 'lead', 'poor'
-
-      
-●	Stopword and punctuation removal — using NLTK's English stopword list and Python's string.punctuation set
-●	Part-of-speech (POS) tagging — each remaining token is tagged as a noun, verb, adjective, or adverb using NLTK's averaged perceptron tagger
-●	POS-aware lemmatization — each token is reduced to its dictionary base form using its POS tag, so verb forms are correctly normalized (e.g. 'diagnosed' → 'diagnose'), not just plural nouns
-
+    - Fifth step is to tagging with help of POS (Part-of-speech) where each token is tagged as  a noun, verb, adjective, or adverb using NLTK's averaged perceptron tagger
+    - Eg: ('study', 'NN'), ('aims', 'VBZ'), ('determine', 'VBP')
+    - Last step is to Lemmatize each word according to POS, each token is reduced to its dictionary base form using its POS tag, so verb forms are correctly normalized by converting from plural to singular form.
+    - Eg: 'aims', 'improved', 'diagnosed'  -->  'aim', 'improve', 'diagnose'.
 
 
 
