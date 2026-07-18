@@ -57,6 +57,8 @@
 - For 'minimum_age' fill '0' as null value and 'maximum_age' fill '120' as null value.
 - For 'healthy_volunteers' null value can be filled by grouping 'study_type' and 'phase' then use mode function to fill the value.
 - For 'eligibility_criteria' fill 'No_Criteria_Mentioned' as null value.
+Remove duplicate records to prevents the same data from being counted multiple times, which could change the analysis and predictions.
+Perform data type conversion to enable accurate calculations, filtering, and machine learning operations.
 
 # Data Preprocessing:
 
