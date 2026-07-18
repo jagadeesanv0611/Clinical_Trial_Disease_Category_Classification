@@ -1,5 +1,11 @@
 # Clinical_Trial_Disease_Category_Classification
-NLP and Machine 
+
+# Project Overview:
+
+
+
+
+
 
 ## Model Deployment:
 https://clinicaltrialdiseasecategoryclassification-cclawzbathmejrp8sxe.streamlit.app/
