@@ -91,6 +91,8 @@
 ### Sex - Disease category:
 <img width="1000" height="600" alt="sex_eligibility_disease_category" src="https://github.com/user-attachments/assets/8220ac66-3d27-4f48-9176-347c06bbb4d6" />
 
+### Healthy Volunteer Distribution:
+<img width="800" height="500" alt="healthy_Vollunteer_dist" src="https://github.com/user-attachments/assets/f9feba50-fcd0-4254-bf28-2e6407ef0c54" />
 
 
 
