@@ -136,6 +136,36 @@ X_tfidf = tfidf_vectorizer.fit_transform(clinical_text_encoded['cleaned_summary'
 | Recall | 88.90% | 87.64% |
 | F1-Score | 90.51% | 89.65% |
 
+## Logistic Regression Evaluation Metrics
+
+| Metric | Training Set | Testing Set |
+|--------|-------------:|------------:|
+| Accuracy | 96.43% | 94.34% |
+| Precision | 97.02% | 95.01% |
+| Recall | 94.80% | 92.09% |
+| F1-Score | 95.85% | 93.44% |
+
+## Linear SVM Evaluation Metrics
+
+| Metric | Training Set | Testing Set |
+|--------|-------------:|------------:|
+| Accuracy | 98.10% | 94.76% |
+| Precision | 98.37% | 95.23% |
+| Recall | 97.66% | 92.99% |
+| F1-Score | 98.01% | 94.03% |
+
+## Random Forest Evaluation Metrics
+
+| Metric | Training Set | Testing Set |
+|--------|-------------:|------------:|
+| Accuracy | 85.12% | 84.92% |
+| Precision | 94.34% | 94.24% |
+| Recall | 76.89% | 76.04% |
+| F1-Score | 82.88% | 82.19% |
+
+
+
+
 
 
 
