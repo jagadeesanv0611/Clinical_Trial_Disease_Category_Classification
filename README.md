@@ -126,14 +126,15 @@ X_tfidf = tfidf_vectorizer.fit_transform(clinical_text_encoded['cleaned_summary'
 - Models are trained,
     - Naive Bayes Model, Logistic regression,  Linear SVM (Linear Support Vector Machine) & Random Forest
 - The results are,
-==================================================
-Naive Bayes Evaluation Metrics:
-==================================================
-Metric	Training Set	Testing Set
-0	Accuracy	0.9129 (91.29%)	0.9074 (90.74%)
-1	Precision	0.9266 (92.66%)	0.9243 (92.43%)
-2	Recall	0.8890 (88.90%)	0.8764 (87.64%)
-3	F1-Score	0.9051 (90.51%)	0.8965 (89.65%)
+- 
+## Naive Bayes Evaluation Metrics
+
+| Metric | Training Set | Testing Set |
+|--------|-------------:|------------:|
+| Accuracy | 91.29% | 90.74% |
+| Precision | 92.66% | 92.43% |
+| Recall | 88.90% | 87.64% |
+| F1-Score | 90.51% | 89.65% |
 
 
 
