@@ -126,7 +126,7 @@ X_tfidf = tfidf_vectorizer.fit_transform(clinical_text_encoded['cleaned_summary'
 - Models are trained,
     - Naive Bayes Model, Logistic regression,  Linear SVM (Linear Support Vector Machine) & Random Forest
 - The results are,
-- 
+
 ## Naive Bayes Evaluation Metrics
 
 | Metric | Training Set | Testing Set |
@@ -163,9 +163,10 @@ X_tfidf = tfidf_vectorizer.fit_transform(clinical_text_encoded['cleaned_summary'
 | Recall | 76.89% | 76.04% |
 | F1-Score | 82.88% | 82.19% |
 
+- From this Linear SVM is best when compare with other models results.
 
-
-
+## Confusion matrix:
+<img width="1000" height="800" alt="confusion_matrix_training_data" src="https://github.com/user-attachments/assets/7ed65e55-6d1e-4216-8360-e04edd4bb053" />
 
 
 
