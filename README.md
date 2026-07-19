@@ -94,6 +94,15 @@
 
 
 
+### Correlation Matrix:
+<img width="1000" height="800" alt="vocalbulary_correlation_matrix" src="https://github.com/user-attachments/assets/b7a2e730-68cd-4ad1-a018-241edbe80dbf" />
+
+### Word count by disease category:
+<img width="1000" height="500" alt="tot_word_count_disease_category" src="https://github.com/user-attachments/assets/010853cf-7e6a-4a33-b786-937c012337f5" />
+
+<img width="800" height="500" alt="avg_word_count_disease_category" src="https://github.com/user-attachments/assets/e1c9a4bf-87ed-48d8-813c-0c90deb597f7" />
+
+
 
 
 
