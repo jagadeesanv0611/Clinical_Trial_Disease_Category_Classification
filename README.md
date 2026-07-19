@@ -91,6 +91,18 @@
 ### Sex - Disease category:
 <img width="1000" height="600" alt="sex_eligibility_disease_category" src="https://github.com/user-attachments/assets/8220ac66-3d27-4f48-9176-347c06bbb4d6" />
 
+### Phase - distribution:
+<img width="1000" height="500" alt="trial_phase_dist" src="https://github.com/user-attachments/assets/04bf3fa9-12c2-499e-8a82-867e08819710" />
+
+- EARLY_PHASE1 — Exploratory
+- PHASE1 — Safety
+- PHASE2 — Effectiveness
+- PHASE3 — Confirmation
+- PHASE4 — Monitoring
+- PHASE1 | PHASE2 — Combined (safety + effectiveness together)
+- PHASE2 | PHASE3 — Combined (effectiveness + confirmation together)
+- Not_Applicable — None (no treatment being tested, so no phase applies)
+
 ### Status Distribution:
 <img width="1000" height="500" alt="overall_trial_status_dist" src="https://github.com/user-attachments/assets/4a8b7e45-d323-4c9f-8d0d-0749a92a1a53" />
 
