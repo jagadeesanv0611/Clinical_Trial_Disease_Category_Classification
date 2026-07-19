@@ -22,16 +22,16 @@
 - brief_summary — free-text description of each trial (model input, X)
 - source_condition_query — the disease category label (target, y), with 8 unique values
 
-| S.No | Disease Category | Trial Count |
-|---|---|---|
-| 1 | Breast Cancer | 16,265 |
-| 2 | Type 2 Diabetes | 11,398 |
-| 3 | COVID-19 | 10,103 |
-| 4 | Anxiety | 9,260 |
-| 5 | Chronic Obstructive Pulmonary Disease | 6,142 |
-| 6 | Rheumatoid Arthritis | 3,618 |
-| 7 | Glaucoma | 2,150 |
-| 8 | Sickle Cell Anemia | 1,136 |
+| S.No | Disease Category |
+|---|---|
+| 1 | Breast Cancer - Abnormal cells grow uncontrollably in the breast |
+| 2 | Type 2 Diabetes - High blood sugar |
+| 3 | COVID-19 - contagious viral infection caused by the SARS-CoV-2 virus. |
+| 4 | Anxiety - Mental health disorder characterized by excessive fear or worry|
+| 5 | Chronic Obstructive Pulmonary Disease - Long-term lung disease that restricts airflow and makes breathing difficult|
+| 6 | Rheumatoid Arthritis - Autoimmune disease where the immune system attacks the joints|
+| 7 | Glaucoma - Eye disease that damages the optic nerve and can lead to vision loss. |
+| 8 | Sickle Cell Anemia - Inherited blood disorder that produces abnormal sickle-shaped red blood cells |
 
 # Data Cleaning
 - The process of cleaning and preparing raw data so that it can be effectively used for analysis and machine learning.
