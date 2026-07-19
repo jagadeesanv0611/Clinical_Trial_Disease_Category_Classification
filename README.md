@@ -82,7 +82,11 @@
 <img width="1000" height="500" alt="no_of_trial_per_disease_category" src="https://github.com/user-attachments/assets/ae6b1cf5-f8a6-4ec1-8632-e8d74aa7ffff" />
 - This chart shows about no of trials of each disease category and from this we can understand first three disease breast cancer, type 2 diabetes, covid-19 are above 10k count. Where as anxiety has around 9260 count. other four disease chronic obstructive pulmonary disease, rheumatoid arthritis, glaucoma, sickle cell anemia are below 7000 counts only.
 
+### Study type by Disease category:
+<img width="1000" height="600" alt="study_type_disease_category" src="https://github.com/user-attachments/assets/0cbcc92c-ef72-4983-a936-bd932e27d66f" />
 
+### Age distribution:
+<img width="1000" height="500" alt="Avg_max_min_age_by_disease_cat" src="https://github.com/user-attachments/assets/e342050e-6b31-4739-978e-13c69b67c1eb" />
 
 
 
