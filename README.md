@@ -122,6 +122,19 @@ X_tfidf = tfidf_vectorizer.fit_transform(clinical_text_encoded['cleaned_summary'
 
 - Sample words = aim: 0.0556, aim determine: 0.1252, also: 0.0721, anxiety: 0.1437, anxiety depression: 0.2256, breast: 0.1171, breast cancer: 0.1225, bring: 0.1535, cancer: 0.1135, cancer patient: 0.1888, concern: 0.1183
 
+# Model Training:
+- Models are trained,
+    - Naive Bayes Model, Logistic regression,  Linear SVM (Linear Support Vector Machine) & Random Forest
+- The results are,
+==================================================
+Naive Bayes Evaluation Metrics:
+==================================================
+Metric	Training Set	Testing Set
+0	Accuracy	0.9129 (91.29%)	0.9074 (90.74%)
+1	Precision	0.9266 (92.66%)	0.9243 (92.43%)
+2	Recall	0.8890 (88.90%)	0.8764 (87.64%)
+3	F1-Score	0.9051 (90.51%)	0.8965 (89.65%)
+
 
 
 
