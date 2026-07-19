@@ -166,10 +166,11 @@ X_tfidf = tfidf_vectorizer.fit_transform(clinical_text_encoded['cleaned_summary'
 - From this Linear SVM is best when compare with other models results.
 
 ## Confusion matrix:
+### Based on testing data:
+<img width="1000" height="800" alt="confusion_matrix_testing_data" src="https://github.com/user-attachments/assets/6214f67c-164c-4812-bf69-c1521c53fcbf" />
+
+### Based on training data:
 <img width="1000" height="800" alt="confusion_matrix_training_data" src="https://github.com/user-attachments/assets/7ed65e55-6d1e-4216-8360-e04edd4bb053" />
-
-
-
 
 
 ## Model Deployment:
