@@ -115,15 +115,11 @@
 
 ## TF-IDF:(Term Frequency - Inverse Document Frequency)
 - TF-IDF is used to convert each word into numbers where machine can learn easily.
-- tfidf_vectorizer = TfidfVectorizer(
-                                    max_features=5000,   # having records around 60,000, so taking sample 5000 is enough
-                                    ngram_range=(1, 2),  # keeps single words AND two-word phrases.
-                                    min_df=5,            # drops words/phrases appearing in fewer than 5 documents.
-                                    max_df=0.9           # drops words/phrases appearing in more than 90% of documents.
-)
+- tfidf_vectorizer = TfidfVectorizer( max_features=5000,  ngram_range=(1, 2),  min_df=5,  max_df=0.9 )
 
 #### Fit and transform:
 X_tfidf = tfidf_vectorizer.fit_transform(clinical_text_encoded['cleaned_summary'])
+
 - Sample words = aim: 0.0556, aim determine: 0.1252, also: 0.0721, anxiety: 0.1437, anxiety depression: 0.2256, breast: 0.1171, breast cancer: 0.1225, bring: 0.1535, cancer: 0.1135, cancer patient: 0.1888, concern: 0.1183
 
 
