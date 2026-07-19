@@ -120,8 +120,8 @@ elif page == "EDA":
 
         selection = st.pills("Data Visualization", 
         options=["Disease category", "Sex eligibility disease category", "Age Distribution", "Phase Distribution",
-                 "Status Distribution", "Study type dist", "Correlation Matrix by Disease category", 
-                 "Word count disease category","Confusion Matrix" ]
+                 "Status Distribution", "Study type dist", "Healthy Volunteer dist", "Correlation Matrix by Disease category", 
+                 "Word count disease category", "TF_IDF terms", "Confusion Matrix" ]
                     )
         
         if selection == "Disease category":
@@ -183,6 +183,16 @@ elif page == "EDA":
                 study_type_dist_fig = load_model("study_type_dist.pkl")
                 st.plotly_chart(study_type_dist_fig, use_container_width=True)
 
+        elif selection == "Healthy Volunteer dist":
+                #study_type_dist_fig = joblib.load(r"C:\Users\jagad\Documents\my_classes\Tasks\mini_project_5-Clinical_Trial_Disease_Category_Classification\models\study_type_dist.pkl")
+                healthy_vol_dist_fig = load_model("healthy_volunteer_dist.pkl")
+                st.plotly_chart(healthy_vol_dist_fig, use_container_width=True)
+
+        elif selection == "TF_IDF terms":
+                #study_type_dist_fig = joblib.load(r"C:\Users\jagad\Documents\my_classes\Tasks\mini_project_5-Clinical_Trial_Disease_Category_Classification\models\study_type_dist.pkl")
+                tf_idf_dist_fig = load_model("TF_IDF_Terms.pkl")
+                st.plotly_chart(tf_idf_dist_fig, use_container_width=True)
+
         elif selection == "Confusion Matrix":
                 #cm_test_svm_fig = joblib.load(r"C:\Users\jagad\Documents\my_classes\Tasks\mini_project_5-Clinical_Trial_Disease_Category_Classification\models\confu_matrix_test_svm.pkl")
                 cm_test_svm_fig = load_model("confu_matrix_test_svm.pkl")
@@ -196,7 +206,7 @@ elif page == "EDA":
 
 # Model prediction:
 elif page == "Disease Prediction":
-        st.header("Disease Prediction using NLP")
+        st.header("Disease Prediction")
 
         user_input = st.text_area("Enter Symptoms")
 
