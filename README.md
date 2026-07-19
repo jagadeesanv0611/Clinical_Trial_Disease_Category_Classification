@@ -88,6 +88,13 @@
 ### Age distribution:
 <img width="1000" height="500" alt="Avg_max_min_age_by_disease_cat" src="https://github.com/user-attachments/assets/e342050e-6b31-4739-978e-13c69b67c1eb" />
 
+### Sex - Disease category:
+<img width="1000" height="600" alt="sex_eligibility_disease_category" src="https://github.com/user-attachments/assets/8220ac66-3d27-4f48-9176-347c06bbb4d6" />
+
+
+
+
+
 
 
 ## Model Deployment:
